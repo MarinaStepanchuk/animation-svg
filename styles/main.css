@@ -1,0 +1,356 @@
+@import "./reset.css";
+
+.animation {
+    width: 580px;
+    height: 400px;
+}
+
+.switch {
+    fill: rgb(236, 213, 79);
+}
+
+.centre {
+    fill: rgb(46, 42, 17);
+}
+
+@keyframes sun {
+    from {fill: rgb(46, 42, 17);}
+    to {fill: rgb(236, 213, 79);}
+}
+
+.sun:active .centre  {
+    animation-name: sun;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.ray1 {
+    fill: rgb(22, 177, 22);
+}
+
+@keyframes ray1 {
+    0% {fill: rgb(22, 177, 22);}
+    25% {fill: rgb(22, 133, 177);}
+    50% {fill: rgb(71, 22, 177);}
+    75% {fill: rgb(177, 22, 61);}
+    100% {fill: rgb(177, 154, 22);}
+}
+
+.sun:active .ray1  {
+    animation-name: ray1;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.ray2 {
+    fill: rgb(16, 142, 153);   
+}
+
+@keyframes ray2 {
+    0% {fill: rgb(16, 142, 153);}
+    25% {fill: rgb(69, 16, 153);}
+    50% {fill: rgb(153, 16, 62);}
+    75% {fill: rgb(153, 121, 16);}
+    100% {fill: rgb(55, 153, 16);}
+}
+
+.sun:active .ray2  {
+    animation-name: ray2;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.ray3 {
+    fill: rgb(17, 51, 160);   
+}
+
+@keyframes ray3 {
+    0% {fill: rgb(17, 51, 160)}
+    25% {fill: rgb(160, 17, 72)}
+    50% {fill: rgb(160, 138, 17)}
+    75% {fill: rgb(17, 160, 17)}
+    100% {fill: rgb(17, 131, 160)}
+}
+
+.sun:active .ray3  {
+    animation-name: ray3;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.ray4 {
+    fill: rgb(102, 15, 160);   
+}
+
+@keyframes ray4 {
+    0% {fill: rgb(102, 15, 160);}
+    25% {fill: rgb(160, 15, 34);}
+    50% {fill: rgb(160, 145, 15);}
+    75% {fill: rgb(15, 160, 46);}
+    100% {fill: rgb(15, 66, 160);}
+}
+
+.sun:active .ray4  {
+    animation-name: ray4;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.ray5 {
+    fill: rgb(163, 20, 56);   
+}
+
+@keyframes ray5 {
+    0% {fill: rgb(163, 20, 56);}
+    25% {fill: rgb(163, 149, 20);}
+    50% {fill: rgb(20, 163, 27);}
+    75% {fill: rgb(20, 53, 163);}
+    100% {fill: rgb(151, 20, 163);}
+}
+
+.sun:active .ray5  {
+    animation-name: ray5;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.ray6 {
+    fill: rgb(161, 108, 22);   
+}
+
+@keyframes ray6 {
+    0% {fill: rgb(161, 108, 22);}
+    25% {fill: rgb(22, 161, 149);}
+    50% {fill: rgb(75, 22, 161);}
+    75% {fill: rgb(161, 22, 68);}
+    100% {fill: rgb(129, 161, 22);}
+}
+
+.sun:active .ray6  {
+    animation-name: ray6;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.ray7 {
+    fill: rgb(179, 168, 21);   
+}
+
+@keyframes ray7 {
+    0% {fill: rgb(179, 168, 21);}
+    25% {fill: rgb(26, 179, 21);}
+    50% {fill: rgb(21, 121, 179);}
+    75% {fill: rgb(134, 21, 179);}
+    100% {fill: rgb(179, 21, 21);}
+}
+
+.sun:active .ray7  {
+    animation-name: ray7;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.ray8 {
+    fill: rgb(167, 16, 147);   
+}
+
+@keyframes ray8 {
+    0% {fill: rgb(167, 16, 147);}
+    25% {fill: rgb(167, 16, 41);}
+    50% {fill: rgb(167, 139, 16);}
+    75% {fill: rgb(16, 167, 49);}
+    100% {fill: rgb(16, 81, 167);}
+}
+
+.sun:active .ray8  {
+    animation-name: ray8;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.notes {
+    fill: green;
+    position: absolute;
+}
+
+.key {
+    fill: rgb(165, 73, 12);
+}
+
+@keyframes key {
+    0% {transform: scale(1);}
+    12.5% {transform: scale(1.2);}
+    100%  {transform: scale(1.2);}
+}
+
+.key {
+    animation-name: key;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes note1 {
+    0% {transform: scale(1);}
+    12.5% {transform: scale(1);}
+    25% {transform: scale(1.2);}
+    100%  {transform: scale(1.2);}
+}
+
+.note1 {
+    animation-name: note1;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes note2 {
+    0% {transform: scale(1);}
+    25% {transform: scale(1);}
+    37.5% {transform: scale(1.2);}
+    100%  {transform: scale(1.2);}
+}
+
+.note2 {
+    animation-name: note2;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes note3 {
+    0% {transform: scale(1);}
+    37.5% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100%  {transform: scale(1.2);}
+}
+
+.note3 {
+    animation-name: note3;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes note4 {
+    0% {transform: scale(1);}
+    50% {transform: scale(1);}
+    62.5% {transform: scale(1.2);}
+    100%  {transform: scale(1.2);}
+}
+
+.note4 {
+    animation-name: note4;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes note5 {
+    0% {transform: scale(1);}
+    62.5% {transform: scale(1);}
+    75% {transform: scale(1.2);}
+    100%  {transform: scale(1.2);}
+}
+
+.note5 {
+    animation-name: note5;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes note6 {
+    0% {transform: scale(1);}
+    75% {transform: scale(1);}
+    87.5% {transform: scale(1.2);}
+    100%  {transform: scale(1.2);}
+}
+
+.note6 {
+    animation-name: note6;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+@keyframes note7 {
+    0% {transform: scale(1);}
+    87.5% {transform: scale(1);}
+    100%  {transform: scale(1.2);}
+}
+
+.note7 {
+    animation-name: note7;
+    animation-duration: 8s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+.cloud {
+    fill: rgb(88, 143, 194);
+}
+
+@keyframes cloud1 {
+    0% {transform: translateX(-200px)}
+    100% {transform: translateX(600px)}
+}
+
+.cloud1 {
+    animation-name: cloud1;
+    animation-timing-function: linear;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud2 {
+    0% {transform: translateX(-200px)}
+    100% {transform: translateX(600px)}
+}
+
+.cloud2 {
+    transform: translateX(-200px);
+    animation-name: cloud2;
+    animation-timing-function: linear;
+    animation-delay: 3.5s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud3 {
+    0% {transform: translateX(-520px)}
+    100% {transform: translateX(400px)}
+}
+
+.cloud3 {
+    transform: translateX(-520px);
+    animation-name: cloud3;
+    animation-timing-function: linear;
+    animation-delay: 7s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cloud4 {
+    0% {transform: translateX(-620px)}
+    100% {transform: translateX(400px)}
+}
+
+.cloud4 {
+    transform: translateX(-620px);
+    animation-name: cloud4;
+    animation-timing-function: linear;
+    animation-delay: 10s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    position: relative;
+}
+
+audio {
+    position: absolute;
+    bottom: -50px;
+    left: 150px;
+}
